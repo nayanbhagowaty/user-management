@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>NodeAMS</Name>
+    <RootNamespace>NodeAMS</RootNamespace>
+    <NodeExeArguments>
+    </NodeExeArguments>
+    <DebuggerPort>
+    </DebuggerPort>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3adc57ed-31d2-42d4-a49d-d7b6f481e0cd</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server\src\bin\www</StartupFile>
+    <StartWebBrowser>True</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="client\app\app.component.css" />
+    <Content Include="client\app\app.component.js.map" />
+    <Content Include="client\app\app.html" />
+    <Content Include="client\app\app.module.js.map" />
+    <Content Include="client\app\app.routing.js.map" />
+    <Content Include="client\app\components\accountDetail\account-detail.component.html" />
+    <Content Include="client\app\components\accountDetail\account-detail.component.js.map" />
+    <Content Include="client\app\components\accounts\accounts.component.html" />
+    <Content Include="client\app\components\accounts\accounts.component.js.map" />
+    <Content Include="client\app\components\dashboard\dashboard.component.css" />
+    <Content Include="client\app\components\dashboard\dashboard.component.html" />
+    <Content Include="client\app\components\dashboard\dashboard.component.js.map" />
+    <Content Include="client\app\main.js.map" />
+    <Content Include="client\app\models\account.js.map" />
+    <Content Include="client\app\services\account.service.js.map" />
+    <Content Include="client\index.html" />
+    <Content Include="client\tsconfig.json" />
+    <Content Include="server\src\app\business\AccountBusiness.js.map" />
+    <Content Include="server\src\app\business\common\IRead.js.map" />
+    <Content Include="server\src\app\business\common\IWrite.js.map" />
+    <Content Include="server\src\app\business\IBaseBusiness.js.map" />
+    <Content Include="server\src\app\business\interfaces\IAccountBusiness.js.map" />
+    <Content Include="server\src\app\dataaccess\DataAccess.js.map" />
+    <Content Include="server\src\app\dataaccess\schemas\AccountSchema.js.map" />
+    <Content Include="server\src\app\model\AccountModel.js.map" />
+    <Content Include="server\src\app\model\interfaces\IAccountModel.js.map" />
+    <Content Include="server\src\app\repository\AccountRepository.js.map" />
+    <Content Include="server\src\app\repository\BaseRepository.js.map" />
+    <Content Include="server\src\app\repository\interfaces\IRead.js.map" />
+    <Content Include="server\src\app\repository\interfaces\IWrite.js.map" />
+    <Content Include="server\src\bin\www" />
+    <Content Include="server\src\config\constants\constants.js.map" />
+    <Content Include="server\src\config\routes\AccountRoutes.js.map" />
+    <Content Include="server\src\config\routes\Routes.js.map" />
+    <Content Include="server\src\controllers\AccountController.js.map" />
+    <Content Include="server\src\controllers\IBaseController.js.map" />
+    <Content Include="server\src\controllers\interfaces\IReadController.js.map" />
+    <Content Include="server\src\controllers\interfaces\IWriteController.js.map" />
+    <Content Include="server\src\server.js.map" />
+    <Content Include="server\tsconfig.json" />
+    <Content Include="tsconfig.json" />
+    <TypeScriptCompile Include="client\app\app.component.ts" />
+    <TypeScriptCompile Include="client\app\app.module.ts" />
+    <TypeScriptCompile Include="client\app\app.routing.ts" />
+    <TypeScriptCompile Include="client\app\components\accountDetail\account-detail.component.ts" />
+    <TypeScriptCompile Include="client\app\components\accounts\accounts.component.ts" />
+    <TypeScriptCompile Include="client\app\components\dashboard\dashboard.component.ts" />
+    <TypeScriptCompile Include="client\app\main.ts" />
+    <TypeScriptCompile Include="client\app\models\account.ts" />
+    <TypeScriptCompile Include="client\app\services\account.service.ts" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <TypeScriptCompile Include="server\src\app\business\AccountBusiness.ts" />
+    <TypeScriptCompile Include="server\src\app\business\common\IRead.ts" />
+    <TypeScriptCompile Include="server\src\app\business\common\IWrite.ts" />
+    <TypeScriptCompile Include="server\src\app\business\IBaseBusiness.ts" />
+    <TypeScriptCompile Include="server\src\app\business\interfaces\IAccountBusiness.ts" />
+    <TypeScriptCompile Include="server\src\app\dataaccess\DataAccess.ts" />
+    <TypeScriptCompile Include="server\src\app\dataaccess\schemas\AccountSchema.ts" />
+    <TypeScriptCompile Include="server\src\app\model\AccountModel.ts" />
+    <TypeScriptCompile Include="server\src\app\model\interfaces\IAccountModel.ts" />
+    <TypeScriptCompile Include="server\src\app\repository\AccountRepository.ts" />
+    <TypeScriptCompile Include="server\src\app\repository\BaseRepository.ts" />
+    <TypeScriptCompile Include="server\src\app\repository\interfaces\IRead.ts" />
+    <TypeScriptCompile Include="server\src\app\repository\interfaces\IWrite.ts" />
+    <TypeScriptCompile Include="server\src\config\constants\constants.ts" />
+    <TypeScriptCompile Include="server\src\config\routes\AccountRoutes.ts" />
+    <TypeScriptCompile Include="server\src\config\routes\Routes.ts" />
+    <TypeScriptCompile Include="server\src\controllers\AccountController.ts" />
+    <TypeScriptCompile Include="server\src\controllers\IBaseController.ts" />
+    <TypeScriptCompile Include="server\src\controllers\interfaces\IReadController.ts" />
+    <TypeScriptCompile Include="server\src\controllers\interfaces\IWriteController.ts" />
+    <TypeScriptCompile Include="server\src\server.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="client\" />
+    <Folder Include="client\app\" />
+    <Folder Include="client\app\components\" />
+    <Folder Include="client\app\components\accountDetail\" />
+    <Folder Include="client\app\components\accounts\" />
+    <Folder Include="client\app\components\dashboard\" />
+    <Folder Include="client\app\models\" />
+    <Folder Include="client\app\services\" />
+    <Folder Include="server\" />
+    <Folder Include="server\src\" />
+    <Folder Include="server\src\app\" />
+    <Folder Include="server\src\app\business\" />
+    <Folder Include="server\src\app\business\common\" />
+    <Folder Include="server\src\app\business\interfaces\" />
+    <Folder Include="server\src\app\dataaccess\" />
+    <Folder Include="server\src\app\dataaccess\schemas\" />
+    <Folder Include="server\src\app\model\" />
+    <Folder Include="server\src\app\model\interfaces\" />
+    <Folder Include="server\src\app\repository\" />
+    <Folder Include="server\src\app\repository\interfaces\" />
+    <Folder Include="server\src\bin\" />
+    <Folder Include="server\src\config\" />
+    <Folder Include="server\src\config\constants\" />
+    <Folder Include="server\src\config\routes\" />
+    <Folder Include="server\src\controllers\" />
+    <Folder Include="server\src\controllers\interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="client\app\app.component.js" />
+    <Compile Include="client\app\app.module.js" />
+    <Compile Include="client\app\app.routing.js" />
+    <Compile Include="client\app\components\accountDetail\account-detail.component.js" />
+    <Compile Include="client\app\components\accounts\accounts.component.js" />
+    <Compile Include="client\app\components\dashboard\dashboard.component.js" />
+    <Compile Include="client\app\main.js" />
+    <Compile Include="client\app\models\account.js" />
+    <Compile Include="client\app\services\account.service.js" />
+    <Compile Include="client\systemjs.config.js" />
+    <Compile Include="server\src\app\business\AccountBusiness.js" />
+    <Compile Include="server\src\app\business\common\IRead.js" />
+    <Compile Include="server\src\app\business\common\IWrite.js" />
+    <Compile Include="server\src\app\business\IBaseBusiness.js" />
+    <Compile Include="server\src\app\business\interfaces\IAccountBusiness.js" />
+    <Compile Include="server\src\app\dataaccess\DataAccess.js" />
+    <Compile Include="server\src\app\dataaccess\schemas\AccountSchema.js" />
+    <Compile Include="server\src\app\model\AccountModel.js" />
+    <Compile Include="server\src\app\model\interfaces\IAccountModel.js" />
+    <Compile Include="server\src\app\repository\AccountRepository.js" />
+    <Compile Include="server\src\app\repository\BaseRepository.js" />
+    <Compile Include="server\src\app\repository\interfaces\IRead.js" />
+    <Compile Include="server\src\app\repository\interfaces\IWrite.js" />
+    <Compile Include="server\src\config\constants\constants.js" />
+    <Compile Include="server\src\config\routes\AccountRoutes.js" />
+    <Compile Include="server\src\config\routes\Routes.js" />
+    <Compile Include="server\src\controllers\AccountController.js" />
+    <Compile Include="server\src\controllers\IBaseController.js" />
+    <Compile Include="server\src\controllers\interfaces\IReadController.js" />
+    <Compile Include="server\src\controllers\interfaces\IWriteController.js" />
+    <Compile Include="server\src\server.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

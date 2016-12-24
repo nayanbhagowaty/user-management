@@ -1,0 +1,40 @@
+<h1>{{title}}</h1>
+<h2>My Accounts</h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="error" *ngIf="error">{{error}}</div>
+        <div class="pull-right">
+            <button class="btn btn-success" (click)="addAccount()">Add New Account</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Object Id</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let account of accountes" [class.active]="account === selectedAccount" (click)="onSelect(account)">
+                    <td>{{account._id}}</td>
+                    <td>{{account.name}}</td>
+                    <td><button class="btn btn-danger" (click)="deleteAccount(account, $event)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div *ngIf="selectedAccount">
+            <h2>
+                {{selectedAccount.name | uppercase}} is my account
+            </h2>
+            <button class="btn btn-primary" (click)="gotoDetail()">View Details</button>
+        </div>
+    </div>
+</div>
