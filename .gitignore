@@ -48,6 +48,8 @@ docs
 lib
 test
 tmp
+obj
+bin
 
 gulpfile.js
 gulpfile.js.map
