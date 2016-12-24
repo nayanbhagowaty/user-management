@@ -36,6 +36,12 @@ build/Release
 *.iml
 
 /tools/**/*.js
+/server/**/*.js
+/server/**/*.js.map
+/client/**/*.js
+/client/**/*.js.map
+/client/css
+/client/libs
 dist
 dev
 docs
