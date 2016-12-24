@@ -1,2 +1,0 @@
-C:\Personal\Projects\NodeAMS\NodeAMS\bin\Microsoft.NodejsTools.WebRole.dll
-C:\Personal\Projects\NodeAMS\NodeAMS\obj\Debug\NodeAMS.njsprojResolveAssemblyReference.cache
