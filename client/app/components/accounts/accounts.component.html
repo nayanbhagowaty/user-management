@@ -15,13 +15,17 @@
                 <tr>
                     <th>Object Id</th>
                     <th>Name</th>
+                    <th>Password</th>
+                    <th>Email</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let account of accountes" [class.active]="account === selectedAccount" (click)="onSelect(account)">
+                <tr *ngFor="let account of accounts" [class.active]="account === selectedAccount" (click)="onSelect(account)">
                     <td>{{account._id}}</td>
                     <td>{{account.name}}</td>
+                    <td>{{account.password}}</td>
+                    <td>{{account.email}}</td>
                     <td><button class="btn btn-danger" (click)="deleteAccount(account, $event)">Delete</button></td>
                 </tr>
             </tbody>

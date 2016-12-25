@@ -11,7 +11,7 @@ import {AccountService} from "../../services/account.service";
 })
 
 export class DashboardComponent implements OnInit {
-    accountes: Account[] = [];
+    accounts: Account[] = [];
 
     constructor(
         private router: Router,
@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
 
     ngOnInit() {
         this.accountService.getAccounts()
-            .then(accountes => this.accountes = accountes);
+            .then(accounts => this.accounts = accounts);
     }
 
     gotoDetail(account: Account) {
