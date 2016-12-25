@@ -27,7 +27,6 @@ export class AccountsComponent implements OnInit {
 
     gotoDetail() {
         this.router.navigate(['/detail', this.selectedAccount._id]);
-        console.log("hello")
     }
 
     addAccount() {
