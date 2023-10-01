@@ -1,21 +1,3 @@
-
-
-
-
-
-## NAYAN
-## Copied from moizKachwala for exploring the features
-
-
-
-
-
-
-
-
-
-
-
 ## [ Angular2 Updated to 2.2.3 ]
 # Angular2 MEAN - QuickStart application with ExpressJS, MongoDB, Gulp and Typescript (Repository Pattern)
 
